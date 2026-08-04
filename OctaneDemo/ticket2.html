@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Defect 2731313</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- TOP NAVIGATION -->
+
+<div class="topbar">
+
+    <div class="logo">
+        Enterprise Defect Tracker
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">Dashboard</a>
+        <a href="index.html">Defects</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="container">
+
+
+<!-- BACK -->
+
+<div style="margin-bottom:20px">
+
+<a href="index.html"
+style="text-decoration:none;color:#0066cc;font-weight:600">
+
+← Back to Defects
+
+</a>
+
+</div>
+
+
+
+
+
+<!-- HEADER -->
+
+
+<div class="card">
+
+
+<h1>
+2731313
+</h1>
+
+
+<br>
+
+
+<h2 style="font-weight:400">
+
+R360 Execution fails with error "Something went wrong"
+
+</h2>
+
+
+<br>
+
+
+<span class="badge analysis">
+
+03 - In Analysis
+
+</span>
+
+
+</div>
+
+
+
+<br>
+
+
+
+
+
+<!-- TABS -->
+
+
+<div class="card">
+
+
+<div style="display:flex;gap:30px">
+
+
+<b>Details</b>
+
+<span>Relations</span>
+
+<span>Tasks</span>
+
+<span>Attachments</span>
+
+<span>History</span>
+
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+
+
+
+
+<!-- CONTENT -->
+
+
+<div style="display:flex;gap:25px;">
+
+
+
+
+
+<!-- LEFT SIDE -->
+
+
+<div style="width:65%">
+
+
+
+
+
+<div class="card">
+
+
+<h2 class="section-title">
+
+Defect Information
+
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<td>
+<b>ID</b>
+</td>
+
+<td>
+2731313
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Title</b>
+</td>
+
+<td>
+R360 Execution fails with error "Something went wrong"
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Phase</b>
+</td>
+
+<td>
+
+<span class="badge analysis">
+In Analysis
+</span>
+
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Owner</b>
+</td>
+
+<td>
+Gabriel
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Assigned ECU</b>
+</td>
+
+<td>
+R360
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Lead Model</b>
+</td>
+
+<td>
+F067
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Severity</b>
+</td>
+
+<td>
+Critical
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Priority</b>
+</td>
+
+<td>
+High
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+<b>Target Release</b>
+</td>
+
+<td>
+Release 26.3
+</td>
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+
+
+<!-- DESCRIPTION -->
+
+
+<div class="card">
+
+
+<h2 class="section-title">
+
+Description
+
+</h2>
+
+
+<p>
+
+R360 execution fails during automated testing.
+The application stops unexpectedly and displays
+"Something went wrong" error message.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+
+<!-- ATTACHMENTS -->
+
+
+<div class="card">
+
+
+<h2 class="section-title">
+
+Attachments
+
+</h2>
+
+
+
+<ul>
+
+<li>
+Execution_Log.txt
+</li>
+
+
+<li>
+R360_Report.pdf
+</li>
+
+
+<li>
+Screenshot_Error.png
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- RIGHT SIDE -->
+
+
+<div style="width:35%">
+
+
+
+
+
+<div class="card">
+
+
+<h2 class="section-title">
+
+💬 Comments
+
+</h2>
+
+
+
+
+
+<!-- COMMENT 1 -->
+
+
+<div style="
+border-bottom:1px solid #ddd;
+padding-bottom:15px;
+margin-bottom:15px;">
+
+
+<b>
+Oleksandr
+</b>
+
+
+<br>
+
+
+<small>
+15-Jul-2025
+</small>
+
+
+
+<p>
+
+Please perform another execution after cold boot.
+The issue needs to be reproduced.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- COMMENT 2 -->
+
+
+<div style="
+border-bottom:1px solid #ddd;
+padding-bottom:15px;
+margin-bottom:15px;">
+
+
+<b>
+Gabriel
+</b>
+
+
+<br>
+
+
+<small>
+14-Jul-2025
+</small>
+
+
+
+<p>
+
+Ticket cannot be fully tested because it depends on
+defect 2755744.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- COMMENT 3 -->
+
+
+<div>
+
+
+<b>
+Testing Team
+</b>
+
+
+<br>
+
+
+<small>
+13-Jul-2025
+</small>
+
+
+
+<p>
+
+Execution stopped before completion.
+Waiting for dependency defect resolution.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

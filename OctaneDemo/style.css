@@ -1,0 +1,480 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Roboto',sans-serif;
+    background:#f5f7fa;
+    color:#2f3542;
+
+}
+
+/* ==========================
+   TOP BAR
+========================== */
+
+.topbar{
+
+    height:60px;
+
+    background:#1b4f8a;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.menu a:hover{
+
+    color:#d6e8ff;
+
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.container{
+
+    width:95%;
+
+    margin:30px auto;
+
+}
+
+/* ==========================
+   PAGE HEADER
+========================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.page-header h1{
+
+    font-size:34px;
+
+    font-weight:500;
+
+}
+
+/* ==========================
+   TOOLBAR
+========================== */
+
+.toolbar{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.primary-btn{
+
+    background:#0078d4;
+
+    color:white;
+
+    border:none;
+
+    padding:11px 20px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.primary-btn:hover{
+
+    background:#0066ba;
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    border:1px solid #d0d5dc;
+
+    padding:11px 20px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.secondary-btn:hover{
+
+    background:#f2f4f8;
+
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search-panel{
+
+    margin-bottom:20px;
+
+}
+
+.search-panel input{
+
+    width:350px;
+
+    padding:12px;
+
+    border:1px solid #d4d8dd;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    background:white;
+
+}
+
+/* ==========================
+   FILTERS
+========================== */
+
+.filters{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.filters select{
+
+    padding:11px;
+
+    border:1px solid #d4d8dd;
+
+    border-radius:6px;
+
+    background:white;
+
+    min-width:170px;
+
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+thead{
+
+    background:#eef2f7;
+
+}
+
+th{
+
+    text-align:left;
+
+    padding:16px;
+
+    font-weight:600;
+
+    color:#4d5562;
+
+    border-bottom:1px solid #dde2e7;
+
+}
+
+td{
+
+    padding:16px;
+
+    border-bottom:1px solid #edf0f3;
+
+    font-size:14px;
+
+}
+
+tbody tr{
+
+    transition:.2s;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+table a{
+
+    color:#0066cc;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+table a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.analysis{
+
+    background:#fff4cf;
+
+    color:#8a6200;
+
+}
+
+.progress{
+
+    background:#d8ecff;
+
+    color:#0057b8;
+
+}
+
+.resolved{
+
+    background:#d8f5de;
+
+    color:#177245;
+
+}
+
+.blocked{
+
+    background:#ffd9d9;
+
+    color:#b51f1f;
+
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:8px;
+
+    padding:20px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   TITLES
+========================== */
+
+.section-title{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.menu{
+
+display:none;
+
+}
+
+.page-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.filters{
+
+flex-direction:column;
+
+}
+
+.search-panel input{
+
+width:100%;
+
+}
+/* ==========================
+   DEFECT TOOLBAR
+========================== */
+
+
+.defect-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:15px 20px;
+
+    border:1px solid #e0e5eb;
+
+    border-radius:6px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.left-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.right-actions{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+.search-box{
+
+    width:260px;
+
+    height:36px;
+
+    border:1px solid #cfd6df;
+
+    border-radius:4px;
+
+    padding-left:12px;
+
+    font-size:14px;
+
+}
+}
